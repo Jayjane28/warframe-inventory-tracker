@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: warframe-tracker
+Version: 0.1.0
+Summary: A tool for tracking your Warframe inventory using OCR
+Author: Warframe Inventory Team
+Requires-Python: >=3.8
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pytesseract
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

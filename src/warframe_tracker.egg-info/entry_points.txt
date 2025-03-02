@@ -1,0 +1,2 @@
+[console_scripts]
+warframe-tracker = warframe_tracker.main:main

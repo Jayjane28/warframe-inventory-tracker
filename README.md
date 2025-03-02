@@ -2,6 +2,34 @@
 
 A Python application that processes Warframe inventory screenshots to track items, types, and quantities.
 
+## Project Structure
+
+The project follows a standard Python package structure:
+
+```
+warframe-inventory-tracker/
+├── src/                        # Source code directory
+│   └── warframe_tracker/       # Main package
+│       ├── __init__.py
+│       ├── corrections_manager.py
+│       ├── image_processor.py
+│       ├── inventory_database.py
+│       ├── main.py
+│       └── user_interface.py
+├── tests/                      # Test directory
+│   ├── __init__.py
+│   └── utils/                  # Test modules corresponding to source modules
+│       ├── __init__.py
+│       ├── test_corrections_manager.py
+│       ├── test_image_processor.py
+│       └── test_inventory_database.py
+├── run_app_new.py              # Application entry point
+├── run_tests.py                # Test runner
+├── install_dev.py              # Development mode installer
+├── setup.py                    # Package setup script
+└── README.md                   # This file
+```
+
 ## Setup
 
 1. Install Python 3.8+ if not already installed
@@ -14,10 +42,28 @@ A Python application that processes Warframe inventory screenshots to track item
    python -m venv venv
    venv\Scripts\activate
    ```
-4. Install dependencies:
+4. Install the package in development mode:
    ```
-   pip install -r requirements.txt
+   python install_dev.py
    ```
+   
+   This will install the package and its dependencies in "editable" mode, allowing you to modify the code without reinstalling.
+
+## Running the Application
+
+After installation, you can run the application with:
+
+```
+python run_app_new.py
+```
+
+## Running Tests
+
+To run the tests:
+
+```
+python run_tests.py
+```
 
 ## Usage
 
@@ -25,7 +71,7 @@ A Python application that processes Warframe inventory screenshots to track item
 2. Place screenshots in the `screenshots` folder
 3. Run the main application:
    ```
-   python run_app.py
+   python run_app_new.py
    ```
 4. Use the menu options to:
    - Process screenshots

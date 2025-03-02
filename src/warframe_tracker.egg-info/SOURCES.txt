@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/warframe_tracker/__init__.py
+src/warframe_tracker/corrections_manager.py
+src/warframe_tracker/image_processor.py
+src/warframe_tracker/inventory_database.py
+src/warframe_tracker/main.py
+src/warframe_tracker/user_interface.py
+src/warframe_tracker.egg-info/PKG-INFO
+src/warframe_tracker.egg-info/SOURCES.txt
+src/warframe_tracker.egg-info/dependency_links.txt
+src/warframe_tracker.egg-info/entry_points.txt
+src/warframe_tracker.egg-info/requires.txt
+src/warframe_tracker.egg-info/top_level.txt
